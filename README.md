@@ -186,10 +186,25 @@ https://gitbucket.example.com
 
 ## Pembahasan
 
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
+- Kelebihan dan Kekurangan Gitbucket
+    - Kelebihan
+        1. Mudah diinstall
+        2. UI Intuitif
+        3. Ekstensibilitas tinggi dengan plugin
+        4. Kompatibel dengan Github API
     - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
+        1. a
+        2. b
+        3. c
+        4. d
+- Perbandingan dengan aplikasi sejenis
+    | Item              | In Stock | Price |
+    | :---------------- | :------: | ----: |
+    | Python Hat        |   True   | 23.99 |
+    | SQL Hat           |   True   | 23.99 |
+    | Codecademy Tee    |  False   | 19.99 |
+    | Codecademy Hoodie |  False   | 42.99 |
+
 
 
 ## Referensi
