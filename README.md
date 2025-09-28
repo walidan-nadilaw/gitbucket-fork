@@ -186,26 +186,42 @@ https://gitbucket.example.com
 
 ## Pembahasan
 
-- Kelebihan dan Kekurangan Gitbucket
+- Kelebihan dan Kekurangan GitBucket
     - Kelebihan
         1. Mudah diinstall dan dijalankan (SEMENTARA)
-            Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`
-        2. UI Intuitif
+            Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`.
+        2. UI Intuitif dan menyerupai Github
+            Memudahkan pengguna baru untuk adaptasi dan mengekplorasi GitBucket.
         3. Ekstensibilitas tinggi dengan plugin
+            Ada plugin resmi yaitu gist, emoji, pages, dan email notifications dan plugin komunitas seperti desktop notification, draw.io, markdown enhanced, Kanban Board, dan lainnya.
         4. Kompatibel dengan Github API
+            Banyak tool pihak ketiga dapat bekerja tanpa banyak penyesuaian.
 
     - kekurangan
-        1. a
-        2. b
-        3. c
-        4. d
+        1. Bergantung pada Java (JVM)
+            Membutuhkan Java 17 dan tidak bisa jalan di Java versi lama. Hal ini menyebabkan GitBucket lebih berat dari kompetitornya
+        2. Kurang kuat untuk skala besar
+            Lebih cocok untuk tim kecil/menengah bukan untuk deployment enterprise dengan ribuan user dan repositori.
+        3. Ketergantungan pada H2 database default
+            Migrasi database antar versi bisa rumit karena tidak otomatis.
+        4. Tidak mendukung Jakarta EE
+            Masih terbatas pada Servlet 3.0, sehingga tidak bisa di-deploy di beberapa server Java modern tanpa workaround.
+
 - Perbandingan dengan aplikasi sejenis
-    | Item              | In Stock | Price |
-    | :---------------- | :------: | ----: |
-    | Python Hat        |   True   | 23.99 |
-    | SQL Hat           |   True   | 23.99 |
-    | Codecademy Tee    |  False   | 19.99 |
-    | Codecademy Hoodie |  False   | 42.99 |
+    | Aspek                     | **GitHub**                                                  | **GitLab**                                             | **GitBucket**                                      | **Gitea**                                                          |
+    | ------------------------- | ----------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------ |
+    | **Lisensi**               | Proprietary (gratis & berbayar)                             | Open Source (MIT untuk CE, EE berbayar)                | Open Source (Apache 2.0)                           | Open Source (MIT)                                                  |
+    | **Bahasa & Runtime**      | Ruby, Go, C, dll. (cloud-hosted)                            | Ruby + Go (self-host)                                  | Scala (JVM, butuh Java 17)                         | Go (binary ringan, cross-platform)                                 |
+    | **Hosting**               | Cloud (github.com), GitHub Enterprise Server (self-host)    | Cloud (gitlab.com) & self-host                         | Self-host (via `gitbucket.war`)                    | Cloud (try.gitea.io) & self-host                                   |
+    | **Kemudahan Instalasi**   | Tidak bisa self-host gratis kecuali pakai GitHub Enterprise | Medium (butuh resource besar, Docker biasanya dipakai) | Sangat mudah (`java -jar gitbucket.war`)           | Sangat mudah (1 binary Go, sangat ringan)                          |
+    | **Fitur Repositori**      | Lengkap: private/public repo, Git LFS, Actions              | Lengkap: private/public repo, Git LFS, CI/CD           | Private/public repo, Git LFS, basic repo viewer    | Private/public repo, Git LFS, basic repo viewer                    |
+    | **Fitur Kolaborasi**      | Issues, PR, Projects, Wiki, Discussions                     | Issues, MR, Wiki, Boards, Epics, Roadmap               | Issues, PR, Wiki, basic timeline                   | Issues, PR, Wiki, basic boards                                     |
+    | **CI/CD**                 | GitHub Actions (native, powerful)                           | GitLab CI/CD (native, sangat lengkap)                  | Tidak ada bawaan (harus pakai Jenkins atau plugin) | Tidak ada bawaan (pakai Drone CI atau eksternal)                   |
+    | **Integrasi**             | Ribuan apps & marketplace                                   | Banyak integrasi DevOps, Docker Registry, Kubernetes   | Jenkins, Slack, LDAP, plugin terbatas              | LDAP, OAuth, plugin sederhana                                      |
+    | **Ekosistem & Komunitas** | Sangat besar, standar industri                              | Sangat besar, dipakai enterprise & DevOps              | Relatif kecil                                      | Sedang berkembang, populer di komunitas open source kecil/menengah |
+    | **Skalabilitas**          | Enterprise-grade, sangat besar                              | Enterprise-grade, support cluster                      | Cocok untuk tim kecil–menengah                     | Cocok untuk tim kecil–menengah                                     |
+    | **Kelebihan**             | - Fitur paling lengkap                                      |                                                        |                                                    |                                                                    |
+
 
 
 
