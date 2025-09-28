@@ -186,7 +186,7 @@ https://gitbucket.example.com
 
 ## Pembahasan
 
-#### Kelebihan dan Kekurangan GitBucket
+- **Kelebihan dan Kekurangan GitBucket**
     - **Kelebihan**
         1. **Mudah diinstall dan dijalankan (SEMENTARA)**<br>
             Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`.
@@ -207,7 +207,7 @@ https://gitbucket.example.com
         4. **Tidak mendukung Jakarta EE**<br>
             Masih terbatas pada Servlet 3.0, sehingga tidak bisa di-deploy di beberapa server Java modern tanpa workaround.
 
-#### Perbandingan dengan aplikasi sejenis
+- **Perbandingan dengan aplikasi sejenis**
     | Aspek                     | **GitHub**                                                  | **GitLab**                                             | **GitBucket**                                      | **Gitea**                                                          |
     | ------------------------- | ----------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------ |
     | **Lisensi**               | Proprietary (gratis & berbayar)                             | Open Source (MIT untuk CE, EE berbayar)                | Open Source (Apache 2.0)                           | Open Source (MIT)                                                  |
