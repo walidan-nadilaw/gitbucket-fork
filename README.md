@@ -208,22 +208,24 @@ https://gitbucket.example.com
             Masih terbatas pada Servlet 3.0, sehingga tidak bisa di-deploy di beberapa server Java modern tanpa workaround.
 
 - **Perbandingan dengan aplikasi sejenis**
-    | Aspek                     | **GitHub**                                                  | **GitLab**                                             | **GitBucket**                                      | **Gitea**                                                          |
-    | ------------------------- | ----------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------ |
-    | **Lisensi**               | Proprietary (gratis & berbayar)                             | Open Source (MIT untuk CE, EE berbayar)                | Open Source (Apache 2.0)                           | Open Source (MIT)                                                  |
-    | **Bahasa & Runtime**      | Ruby, Go, C, dll. (cloud-hosted)                            | Ruby + Go (self-host)                                  | Scala (JVM, butuh Java 17)                         | Go (binary ringan, cross-platform)                                 |
-    | **Hosting**               | Cloud (github.com), GitHub Enterprise Server (self-host)    | Cloud (gitlab.com) & self-host                         | Self-host (via `gitbucket.war`)                    | Cloud (try.gitea.io) & self-host                                   |
-    | **Kemudahan Instalasi**   | Tidak bisa self-host gratis kecuali pakai GitHub Enterprise | Medium (butuh resource besar, Docker biasanya dipakai) | Sangat mudah (`java -jar gitbucket.war`)           | Sangat mudah (1 binary Go, sangat ringan)                          |
-    | **Fitur Repositori**      | Lengkap: private/public repo, Git LFS, Actions              | Lengkap: private/public repo, Git LFS, CI/CD           | Private/public repo, Git LFS, basic repo viewer    | Private/public repo, Git LFS, basic repo viewer                    |
-    | **Fitur Kolaborasi**      | Issues, PR, Projects, Wiki, Discussions                     | Issues, MR, Wiki, Boards, Epics, Roadmap               | Issues, PR, Wiki, basic timeline                   | Issues, PR, Wiki, basic boards                                     |
-    | **CI/CD**                 | GitHub Actions (native, powerful)                           | GitLab CI/CD (native, sangat lengkap)                  | Tidak ada bawaan (harus pakai Jenkins atau plugin) | Tidak ada bawaan (pakai Drone CI atau eksternal)                   |
-    | **Integrasi**             | Ribuan apps & marketplace                                   | Banyak integrasi DevOps, Docker Registry, Kubernetes   | Jenkins, Slack, LDAP, plugin terbatas              | LDAP, OAuth, plugin sederhana                                      |
-    | **Ekosistem & Komunitas** | Sangat besar, standar industri                              | Sangat besar, dipakai enterprise & DevOps              | Relatif kecil                                      | Sedang berkembang, populer di komunitas open source kecil/menengah |
-    | **Skalabilitas**          | Enterprise-grade, sangat besar                              | Enterprise-grade, support cluster                      | Cocok untuk tim kecil–menengah                     | Cocok untuk tim kecil–menengah                                     |
-    | **Kelebihan**             | - Fitur paling lengkap                                      |                                                        |                                                    |                                                                    |
+    | Aspek                     | **GitHub**                                                  | **GitBucket**                                      | **Gitea**                                                          | **GitLab**                                             |
+    | ------------------------- | ----------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------ |
+    | **Lisensi**               | Proprietary (gratis & berbayar)                             | Open Source (Apache 2.0)                           | Open Source (MIT)                                                  | Open Source (MIT untuk CE, EE berbayar)                |
+    | **Bahasa & Runtime**      | Ruby, Go, C, dll. (cloud-hosted)                            | Scala (JVM, butuh Java 17)                         | Go (binary ringan, cross-platform)                                 | Ruby + Go (self-host)                                  |
+    | **Hosting**               | Cloud (github.com), GitHub Enterprise Server (self-host)    | Self-host (via `gitbucket.war`)                    | Cloud (try.gitea.io) & self-host                                   | Cloud (gitlab.com) & self-host                         |
+    | **Kemudahan Instalasi**   | Tidak bisa self-host gratis kecuali pakai GitHub Enterprise | Sangat mudah (`java -jar gitbucket.war`)           | Sangat mudah (1 binary Go, sangat ringan)                          | Medium (butuh resource besar, Docker biasanya dipakai) |
+    | **Fitur Repositori**      | Lengkap: private/public repo, Git LFS, Actions              | Private/public repo, Git LFS, basic repo viewer    | Private/public repo, Git LFS, basic repo viewer                    | Lengkap: private/public repo, Git LFS, CI/CD           |
+    | **Fitur Kolaborasi**      | Issues, PR, Projects, Wiki, Discussions                     | Issues, PR, Wiki, basic timeline                   | Issues, PR, Wiki, basic boards                                     | Issues, MR, Wiki, Boards, Epics, Roadmap               |
+    | **CI/CD**                 | GitHub Actions (native, powerful)                           | Tidak ada bawaan (harus pakai Jenkins atau plugin) | Tidak ada bawaan (pakai Drone CI atau eksternal)                   | GitLab CI/CD (native, sangat lengkap)                  |
+    | **Integrasi**             | Ribuan apps & marketplace                                   | Jenkins, Slack, LDAP, plugin terbatas              | LDAP, OAuth, plugin sederhana                                      | Banyak integrasi DevOps, Docker Registry, Kubernetes   |
+    | **Ekosistem & Komunitas** | Sangat besar, standar industri                              | Relatif kecil                                      | Sedang berkembang, populer di komunitas open source kecil/menengah | Sangat besar, dipakai enterprise & DevOps              |
+    | **Skalabilitas**          | Enterprise-grade, sangat besar                              | Cocok untuk tim kecil–menengah                     | Cocok untuk tim kecil–menengah                                     | Enterprise-grade, support cluster                      |
 
-
-
+    - **Ringkasan**
+        - GitHub: terbaik untuk open source & integrasi luas (tapi self-host berbayar).
+        - GitBucket: ringan, mudah install, bagus untuk tim kecil yang butuh mirip GitHub.
+        - Gitea: sangat ringan, mudah, cocok untuk komunitas kecil/organisasi dengan resource terbatas.
+        - GitLab: cocok untuk DevOps & enterprise dengan CI/CD bawaan.
 
 ## Referensi
 
