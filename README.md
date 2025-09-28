@@ -188,10 +188,12 @@ https://gitbucket.example.com
 
 - Kelebihan dan Kekurangan Gitbucket
     - Kelebihan
-        1. Mudah diinstall
+        1. Mudah diinstall dan dijalankan (SEMENTARA)
+            Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`
         2. UI Intuitif
         3. Ekstensibilitas tinggi dengan plugin
         4. Kompatibel dengan Github API
+
     - kekurangan
         1. a
         2. b
