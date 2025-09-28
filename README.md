@@ -186,28 +186,28 @@ https://gitbucket.example.com
 
 ## Pembahasan
 
-- Kelebihan dan Kekurangan GitBucket
-    - Kelebihan
-        1. Mudah diinstall dan dijalankan (SEMENTARA)<br>
+#### Kelebihan dan Kekurangan GitBucket
+    - **Kelebihan**
+        1. **Mudah diinstall dan dijalankan (SEMENTARA)**<br>
             Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`.
-        2. UI Intuitif dan menyerupai Github
+        2. **UI Intuitif dan menyerupai Github**<br>
             Memudahkan pengguna baru untuk adaptasi dan mengekplorasi GitBucket.
-        3. Ekstensibilitas tinggi dengan plugin
+        3. **Ekstensibilitas tinggi dengan plugin**<br>
             Ada plugin resmi yaitu gist, emoji, pages, dan email notifications dan plugin komunitas seperti desktop notification, draw.io, markdown enhanced, Kanban Board, dan lainnya.
-        4. Kompatibel dengan Github API
+        4. **Kompatibel dengan Github API**<br>
             Banyak tool pihak ketiga dapat bekerja tanpa banyak penyesuaian.
 
-    - kekurangan
-        1. Bergantung pada Java (JVM)
+    - **Kekurangan**
+        1. **Bergantung pada Java (JVM)**<br>
             Membutuhkan Java 17 dan tidak bisa jalan di Java versi lama. Hal ini menyebabkan GitBucket lebih berat dari kompetitornya
-        2. Kurang kuat untuk skala besar
+        2. **Kurang kuat untuk skala besar**<br>
             Lebih cocok untuk tim kecil/menengah bukan untuk deployment enterprise dengan ribuan user dan repositori.
-        3. Ketergantungan pada H2 database default
+        3. **Ketergantungan pada H2 database default**<br>
             Migrasi database antar versi bisa rumit karena tidak otomatis.
-        4. Tidak mendukung Jakarta EE
+        4. **Tidak mendukung Jakarta EE**<br>
             Masih terbatas pada Servlet 3.0, sehingga tidak bisa di-deploy di beberapa server Java modern tanpa workaround.
 
-- Perbandingan dengan aplikasi sejenis
+#### Perbandingan dengan aplikasi sejenis
     | Aspek                     | **GitHub**                                                  | **GitLab**                                             | **GitBucket**                                      | **Gitea**                                                          |
     | ------------------------- | ----------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------ |
     | **Lisensi**               | Proprietary (gratis & berbayar)                             | Open Source (MIT untuk CE, EE berbayar)                | Open Source (Apache 2.0)                           | Open Source (MIT)                                                  |
