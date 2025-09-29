@@ -176,7 +176,11 @@ Sekarang akses dengan:
 https://gitbucket.example.com
 ```
 
+hdlHFASHDFASDLFKHASDFHASDKLJFHAS
 
+FASDFASDFASDFASDFASDF
+
+DFADSFASDF
 ## Cara Pemakaian
 
 - Tampilan aplikasi web
