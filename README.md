@@ -179,10 +179,36 @@ https://gitbucket.example.com
 
 ## Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+  - Dashboard.
+<img width="735" height="373" alt="image" src="https://github.com/user-attachments/assets/05bc5a38-f118-4403-a446-5092bb4a84b9" />
 
+Penjelasan = Dashboard berfungsi sebagai halaman beranda utama setelah pengguna masuk ke platform. Fitur ini menyajikan tinjauan umum mengenai aktivitas terkini, menyertakan News Feed yang menampilkan pembaruan dari repositori yang diikuti. Pengguna memanfaatkannya sebagai pusat navigasi untuk memantau aktivitas keseluruhan akun dan mengakses cepat repositori yang baru saja diperbarui. Anda bisa menelusuri fitur lainnya ketika berada disini sebab seluruh fitur telah terpresentasi dan terlihat dalam ui dashboard.
+
+  - File.
+<img width="735" height="373" alt="image" src="https://github.com/user-attachments/assets/05bc5a38-f118-4403-a446-5092bb4a84b9" />
+
+Penjelasan = Files adalah tampilan utama di dalam repositori yang menunjukkan hierarki folder dan file dari kode sumber proyek pada branch tertentu. Fungsi utamanya adalah menyajikan status kode terbaru dan commit terakhir yang dianggap relevan. Pengguna menggunakannya untuk menelusuri isi proyek secara detail, memeriksa struktur kode, mengamati history perubahan file, serta melihat daftar file. Ini bisa di akses pada menu file.
+
+  - Branches.
+<img width="730" height="380" alt="image" src="https://github.com/user-attachments/assets/f6815385-eb1a-4689-b02f-abe49d17b2e3" />
+
+Penjelasan =  Fitur Branches mengelola semua jalur pengembangan independen dalam proyek. Fungsinya memastikan stabilitas kode utama dengan mengisolasi atau menjaga pekerjaan fitur atau perbaikan bug yang sedang dilakukan atau sedang berlangsung. Pengguna membuat branch baru untuk melakukan pekerjaan tanpa mengganggu kode utama, serta membandingkan dan mengelola perkembangan task/pekerjaan.
+
+  - Releases.
+  <img width="749" height="353" alt="image" src="https://github.com/user-attachments/assets/30107764-bc0f-46d5-9860-2bb570d72b86" />
+
+Penjelasan = Releases digunakan untuk menandai secara resmi versi stabil dan teruji dari perangkat lunak, biasanya dihubungkan dengan tag Git tertentu. Fungsinya adalah menyediakan titik sejarah yang terdefinisi dengan baik dan siap didistribusikan kepada pengguna akhir atau sistem lainnya. Pengguna memanfaatkan fitur ini untuk melacak sejarah versi produk dan menyediakan paket unduhan sumber kode yang relevan.
+
+  - Issues.
+  <img width="1887" height="935" alt="image" src="https://github.com/user-attachments/assets/c65ea7e2-b0d7-41a2-9c32-0bc0d247a053" />
+
+Penjelasan = Issues Merupakan sistem terstruktur untuk mencatat, mengelola, dan mendiskusikan bug, permintaan fitur, serta tugas yang perlu diselesaikan. Fungsi utamanya adalah terletak pada menyediakan pusat terpadu untuk mengatur dan lalu memprioritaskan semua pekerjaan yang diperlukan proyek. Pengguna menggunakannya untuk melaporkan masalah baru, memberikan label, menetapkan penanggung jawab, dan melacak kemajuan solusi.
+
+  - Pull Request.
+  <img width="1869" height="995" alt="image" src="https://github.com/user-attachments/assets/57a14f23-a398-4644-ab09-669b45102f4d" />
+  
+Penjelasan = Pull Requests (PR) adalah fitur penting di GitBucket yang memungkinkan pengguna mengusulkan dan mengajukan perubahan kode dari satu branch ke branch lain (misalnya, master). Fungsi utamanya adalah memastikan kualitas kode tetap terjaga karena PR mewajibkan anggota tim melakukan tinjauan kode (code review) secara menyeluruh sebelum perubahan diizinkan untuk digabungkan. Selain itu, fitur ini sangat memfasilitasi kolaborasi karena semua diskusi, komentar, dan revisi yang terkait dengan usulan perubahan kode tersimpan secara terpusat dan transparan di dalam satu tempat.
+ 
 
 ## Pembahasan
 
