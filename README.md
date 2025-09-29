@@ -194,8 +194,8 @@ https://gitbucket.example.com
 
 ## Referensi
 
-1. [Tentang Gitbucket]([url](https://gitbucket.github.io/)) - Gitbucket
-2. [Tentang Azure]([url](https://azure.microsoft.com/id-id/products/virtual-machines)) - Microsoft
-3. [Cara Menambah Kontributor pada Azure]([url](https://learn.microsoft.com/en-us/azure/ai-services/luis/luis-how-to-collaborate)) - Microsoft Ignite
-4. [Praktikum Komunikasi Data dan Jaringan Komputer 2025/2026]([url](https://github.com/auriza/komdat-lab/blob/master/README.md)) - auriza
+1. [Tentang Gitbucket]([url](https://gitbucket.github.io/)) 
+2. [Tentang Azure]([url](https://azure.microsoft.com/id-id/products/virtual-machines)) 
+3. [Cara Menambah Kontributor pada Azure]([url](https://learn.microsoft.com/en-us/azure/ai-services/luis/luis-how-to-collaborate)) 
+4. [Praktikum Komunikasi Data dan Jaringan Komputer 2025/2026]([url](https://github.com/auriza/komdat-lab/blob/master/README.md)) 
 
