@@ -256,7 +256,7 @@ Penjelasan = Pull Requests (PR) adalah fitur penting di GitBucket yang memungkin
 ## Referensi
 
 1. [Tentang GitBucket](https://gitbucket.github.io/) - GitBucket
-2. [Repository Gitbucket pada Github](https://github.com/gitbucket/gitbucket) - GitBucket
+2. [Repository GitBucket pada Github](https://github.com/gitbucket/gitbucket) - GitBucket
 3. [Tentang Azure](https://azure.microsoft.com/id-id/products/virtual-machines) - Microsoft
 4. [Cara Menambah Kontributor pada Azure](https://learn.microsoft.com/en-us/azure/ai-services/luis/luis-how-to-collaborate) - Microsoft
 5. [Cara Menginstall GitBucket pada Ubuntu/Debian Linux](https://computingforgeeks.com/how-to-install-gitbucket-on-ubuntu/?amp=) - Computing for Geeks
