@@ -212,11 +212,46 @@ Penjelasan = Pull Requests (PR) adalah fitur penting di GitBucket yang memungkin
 
 ## Pembahasan
 
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
+- **Kelebihan dan Kekurangan GitBucket**
+    - **Kelebihan**
+        1. **Mudah diinstall dan dijalankan (SEMENTARA)**<br>
+            Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`.
+        2. **UI Intuitif dan menyerupai Github**<br>
+            Memudahkan pengguna baru untuk adaptasi dan mengekplorasi GitBucket.
+        3. **Ekstensibilitas tinggi dengan plugin**<br>
+            Ada plugin resmi yaitu gist, emoji, pages, dan email notifications dan plugin komunitas seperti desktop notification, draw.io, markdown enhanced, Kanban Board, dan lainnya.
+        4. **Kompatibel dengan Github API**<br>
+            Banyak tool pihak ketiga dapat bekerja tanpa banyak penyesuaian.
 
+    - **Kekurangan**
+        1. **Bergantung pada Java (JVM)**<br>
+            Membutuhkan Java 17 dan tidak bisa jalan di Java versi lama. Hal ini menyebabkan GitBucket lebih berat dari kompetitornya
+        2. **Kurang kuat untuk skala besar**<br>
+            Lebih cocok untuk tim kecil/menengah bukan untuk deployment enterprise dengan ribuan user dan repositori.
+        3. **Ketergantungan pada H2 database default**<br>
+            Migrasi database antar versi bisa rumit karena tidak otomatis.
+        4. **Tidak mendukung Jakarta EE**<br>
+            Masih terbatas pada Servlet 3.0, sehingga tidak bisa di-deploy di beberapa server Java modern tanpa workaround.
+
+- **Perbandingan dengan aplikasi sejenis**
+    | Aspek                     | **GitHub**                                                  | **GitBucket**                                      | **Gitea**                                                          | **GitLab**                                             |
+    | ------------------------- | ----------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------ |
+    | **Lisensi**               | Proprietary (gratis & berbayar)                             | Open Source (Apache 2.0)                           | Open Source (MIT)                                                  | Open Source (MIT untuk CE, EE berbayar)                |
+    | **Bahasa & Runtime**      | Ruby, Go, C, dll. (cloud-hosted)                            | Scala (JVM, butuh Java 17)                         | Go (binary ringan, cross-platform)                                 | Ruby + Go (self-host)                                  |
+    | **Hosting**               | Cloud (github.com), GitHub Enterprise Server (self-host)    | Self-host (via `gitbucket.war`)                    | Cloud (try.gitea.io) & self-host                                   | Cloud (gitlab.com) & self-host                         |
+    | **Kemudahan Instalasi**   | Tidak bisa self-host gratis kecuali pakai GitHub Enterprise | Sangat mudah (`java -jar gitbucket.war`)           | Sangat mudah (1 binary Go, sangat ringan)                          | Medium (butuh resource besar, Docker biasanya dipakai) |
+    | **Fitur Repositori**      | Lengkap: private/public repo, Git LFS, Actions              | Private/public repo, Git LFS, basic repo viewer    | Private/public repo, Git LFS, basic repo viewer                    | Lengkap: private/public repo, Git LFS, CI/CD           |
+    | **Fitur Kolaborasi**      | Issues, PR, Projects, Wiki, Discussions                     | Issues, PR, Wiki, basic timeline                   | Issues, PR, Wiki, basic boards                                     | Issues, MR, Wiki, Boards, Epics, Roadmap               |
+    | **CI/CD**                 | GitHub Actions (native, powerful)                           | Tidak ada bawaan (harus pakai Jenkins atau plugin) | Tidak ada bawaan (pakai Drone CI atau eksternal)                   | GitLab CI/CD (native, sangat lengkap)                  |
+    | **Integrasi**             | Ribuan apps & marketplace                                   | Jenkins, Slack, LDAP, plugin terbatas              | LDAP, OAuth, plugin sederhana                                      | Banyak integrasi DevOps, Docker Registry, Kubernetes   |
+    | **Ekosistem & Komunitas** | Sangat besar, standar industri                              | Relatif kecil                                      | Sedang berkembang, populer di komunitas open source kecil/menengah | Sangat besar, dipakai enterprise & DevOps              |
+    | **Skalabilitas**          | Enterprise-grade, sangat besar                              | Cocok untuk tim kecil–menengah                     | Cocok untuk tim kecil–menengah                                     | Enterprise-grade, support cluster                      |
+
+    - **Ringkasan**
+        - GitHub: terbaik untuk open source & integrasi luas (tapi self-host berbayar).
+        - GitBucket: ringan, mudah install, bagus untuk tim kecil yang butuh mirip GitHub.
+        - Gitea: sangat ringan, mudah, cocok untuk komunitas kecil/organisasi dengan resource terbatas.
+        - GitLab: cocok untuk DevOps & enterprise dengan CI/CD bawaan.
 
 ## Referensi
 
