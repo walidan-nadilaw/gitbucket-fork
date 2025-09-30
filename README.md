@@ -214,7 +214,7 @@ Penjelasan = Pull Requests (PR) adalah fitur penting di GitBucket yang memungkin
 
 - **Kelebihan dan Kekurangan GitBucket**
     - **Kelebihan**
-        1. **Mudah diinstall dan dijalankan (SEMENTARA)**<br>
+        1. **Mudah diinstall dan dijalankan**<br>
             Cukup install gitbucket war lalu menjalankan `java -jar gitbucket.war` di terminal dan gitbucket sudah bisa dijalankan dengan `http://[hostname]:8080/`.
         2. **UI Intuitif dan menyerupai Github**<br>
             Memudahkan pengguna baru untuk adaptasi dan mengekplorasi GitBucket.
