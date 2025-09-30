@@ -260,8 +260,8 @@ Penjelasan = Pull Requests (PR) adalah fitur penting di GitBucket yang memungkin
 3. [Tentang Azure](https://azure.microsoft.com/id-id/products/virtual-machines) - Microsoft
 4. [Cara Menambah Kontributor pada Azure](https://learn.microsoft.com/en-us/azure/ai-services/luis/luis-how-to-collaborate) - Microsoft
 5. [Cara Menginstall GitBucket pada Ubuntu/Debian Linux](https://computingforgeeks.com/how-to-install-gitbucket-on-ubuntu/?amp=) - Computing for Geeks
-6. [Cara Install & Konfigurasi Nginx pada Ubuntu]([url](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)) - Digital Ocean
-7. [Referensi Git]([url](https://git-scm.com/docs)) - Git
+6. [Cara Install & Konfigurasi Nginx pada Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04) - Digital Ocean
+7. [Referensi Git](https://git-scm.com/docs) - Git
 8. [Praktikum Komunikasi Data dan Jaringan Komputer 2025/2026](https://github.com/auriza/komdat-lab/blob/master/README.md) - auriza
 9. [ChatGPT](https://chatgpt.com/)
 10. [Gemini](https://gemini.google.com/app)
